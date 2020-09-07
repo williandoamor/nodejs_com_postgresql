@@ -3,7 +3,7 @@ const db = require('./conectiondb')
 async function createTable() {
 
     await db.connect()
-
+    
     await db.query('create table eventos(cod_event serial primary key,'
          +' nome_event varchar(100) not null,'
          +' data_event date not null,'
@@ -23,7 +23,7 @@ async function createTable() {
             +' dumanut_par timestamp,'
             +' primary key (cod_event, cod_par),'
             +' foreign key (cod_event) references eventos (cod_event),'
-            +' foreign key (cod_par) references participante (cod_par)'
+            +' foreign key (cod_par) references participante (cod_par))'
         )
 
         /*Cria a trigger para alimentar o campo data de manutencao

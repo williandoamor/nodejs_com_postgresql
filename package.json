@@ -1,0 +1,22 @@
+{
+  "name": "nodepostgre",
+  "version": "1.0.0",
+  "description": "Projeto Nodejs com Postgresql-12 on Ubuntu 20.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/williandoamor/nodejs_com_postgresql.git"
+  },
+  "author": "Willian do Amor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/williandoamor/nodejs_com_postgresql/issues"
+  },
+  "homepage": "https://github.com/williandoamor/nodejs_com_postgresql#readme",
+  "dependencies": {
+    "pg": "^8.3.3"
+  }
+}
